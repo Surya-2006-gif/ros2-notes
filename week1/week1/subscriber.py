@@ -34,7 +34,6 @@ def main(args=None):
     rclpy.init(args=args)
     node = Subscriber()
     rclpy.spin(node)
-    # No need to destroy node or shutdown here, already done in timer callback
-
+    
 if __name__ == '__main__':
     main()
