@@ -76,12 +76,12 @@ A node may publish data to any number of topics and simultaneously have subscrip
 
 **So you see this part in most of the code for nodes,but what exactly is this??**
 
-![Screenshot 2025-05-17 114616](https://github.com/user-attachments/assets/f50923b0-de5c-45b3-adcb-06eada452748)
+![Screenshot 2025-05-17 114616](https://github.com/user-attachments/assets/9e629cea-fffb-4696-b0f5-41757cf9546e)
 
 - So this tells the Python interpreter to start calling the `main()` function only if the script is run directly from its original place — like running the file from the t nal or launching it with `ros2 run`.
 - If the script is imported into some other file, then this part won’t execute.
 
-![Screenshot 2025-05-17 114923](https://github.com/user-attachments/assets/36ee5ba2-8565-4da9-8a84-92b6bda1246c)
+![Screenshot 2025-05-17 114923](https://github.com/user-attachments/assets/43c0f47a-8bb6-4ee3-9636-2fe18101428c)
 
 
 - The above will be the common structure for any `main()`  you will create.
@@ -110,7 +110,7 @@ A node may publish data to any number of topics and simultaneously have subscrip
 #### The subscriber node:
 
 
-![Screenshot 2025-05-17 115741](https://github.com/user-attachments/assets/84c8edbd-febd-4c9f-bbc3-fb1e8769c230)
+![Screenshot 2025-05-17 115741](https://github.com/user-attachments/assets/7e41fe1f-65bf-410b-9bb0-1bab449d6ee4)
 
 - **What is listener_callback and when is it called?**
 
