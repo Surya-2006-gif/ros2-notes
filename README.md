@@ -71,7 +71,8 @@ A node may publish data to any number of topics and simultaneously have subscrip
 
 #### The Publisher Node :
 
-![Screenshot 2025-05-17 114441](https://github.com/user-attachments/assets/f56daddf-28a2-49d6-b5c3-03f78518aa3b)
+![Screenshot 2025-05-17 114441](https://github.com/user-attachments/assets/1d81efcf-29d6-48ac-b68a-dbb1518135ba)
+
 
 **So you see this part in most of the code for nodes,but what exactly is this??**
 
