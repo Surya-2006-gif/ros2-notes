@@ -28,11 +28,11 @@
         - This is the most typical way of two nodes communicating.
         - Here a publisher node publishes messages into this and whichever node wants to get that message can subscribe to this and can access them.
 
-![Topic-SinglePublisherandSingleSubscriber](https://github.com/user-attachments/assets/87897d1b-8ac0-441a-89b6-f6e3093562b1)
+![Topic-SinglePublisherandSingleSubscriber](https://github.com/user-attachments/assets/67ef3aa3-8ce1-470f-a7e2-085cdb9470a1)
 
 A node may publish data to any number of topics and simultaneously have subscriptions to any number of topics.
 
-![Topic-MultiplePublisherandMultipleSubscriber](https://github.com/user-attachments/assets/3089da34-93b3-4f9d-ab04-1d9f9e292ac3)
+![Topic-MultiplePublisherandMultipleSubscriber](https://github.com/user-attachments/assets/1f565f8f-299e-4678-bac8-96a409b1933d)
 
 [for more functionalities on Topic](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
 
@@ -43,9 +43,9 @@ A node may publish data to any number of topics and simultaneously have subscrip
          - Here, a client node makes a request, and the server node (or service node) gives back a response.
          - This is useful when you want to trigger something once — like turning on a motor, resetting a sensor, or asking for a specific value — rather than streaming data all the time like in topics.
 
-![Service-SingleServiceClient](https://github.com/user-attachments/assets/170a72e0-f569-4aeb-806a-11afaa1ee6dd)
+![Service-SingleServiceClient](https://github.com/user-attachments/assets/1ff5fcba-aa6e-44de-b28e-d5359314ebe6)
 
-![Service-MultipleServiceClient](https://github.com/user-attachments/assets/9e3c547d-84e1-43d1-9e4c-9b4c1dc10d95)
+![Service-MultipleServiceClient](https://github.com/user-attachments/assets/3fa30b5f-634c-4615-a28f-74e1cd842309)
 
 [for more functionalities on service](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html)
 
@@ -61,7 +61,7 @@ A node may publish data to any number of topics and simultaneously have subscrip
              - Getting continuous feedback like a topic,
              And finally getting a result when the task is complete.
 
-![Action-SingleActionClient](https://github.com/user-attachments/assets/85cf3721-5732-42ba-8955-005b49311e12)
+![Action-SingleActionClient](https://github.com/user-attachments/assets/2e348877-790d-4d8b-9dc2-b2379b90e616)
 
 [for more functionalities on action](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html)
 
