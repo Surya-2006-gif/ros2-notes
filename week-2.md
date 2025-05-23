@@ -143,6 +143,17 @@ We have Two phases while discovery
 
 - The server keeps a list of all nodes and tells nodes about others only when needed. Nodes only talk to the server for discovery, not to every node.
 
+### What is a ros master??
+  A ROS Master is a central part of ROS 1 that helps all the robot’s nodes find and connect to each other. When a node starts, it tells the Master what topics it wants to publish or subscribe to. The Master keeps track of this info and helps nodes discover each other so they can communicate directly.The Master runs as a single program (roscore) and acts like a phone book for nodes. Without it, nodes wouldn’t know where to send or get data, so the system wouldn’t work properly.
+
+### Why was the ros master dropped???
+
+It was dropped of the following reasons:
+
+      - The ROS Master acts as a central server, so if it goes down or restarts, all nodes lose connection and communication breaks
+
+      - 
+  
 
 
 
