@@ -151,9 +151,8 @@ We have Two phases while discovery
 It was dropped of the following reasons:
 
       - The ROS Master acts as a central server, so if it goes down or restarts, all nodes lose connection and communication breaks
-
+      - One of the other reason is that ros1 didnt provide flexibility(ros2 had qos profiles)
       - 
-  
 
 
 
