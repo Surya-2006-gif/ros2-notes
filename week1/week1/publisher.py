@@ -7,11 +7,15 @@ class Mynode(Node):
         super().__init__('publisher_node')
         self.publisher_ = self.create_publisher(Float32, 'chatter', 10)
 
-        try:
-            data = float(input("Enter a number to publish: "))
-        except ValueError:
-            print("Invalid input. Please enter a float value.")
-            return
+        # try:
+        #     data = float(input("Enter a number to publish: "))
+        # except ValueError:
+        #     print("Invalid input. Please enter a float value.")
+        #     return  
+        '''launch files doesnt support interactive input '''
+
+        self.declare_parameter('data',12.4)
+        data=self.get_parameter('data').value
 
         msg = Float32()
         msg.data = data
