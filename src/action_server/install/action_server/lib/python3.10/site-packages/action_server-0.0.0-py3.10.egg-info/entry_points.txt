@@ -1,0 +1,4 @@
+[console_scripts]
+rotation_client = action_server.rotation_client:main
+rotation_server = action_server.rotation_server:main
+

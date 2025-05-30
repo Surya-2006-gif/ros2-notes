@@ -1,0 +1,8 @@
+{
+  "package_name": "action_interface",
+  "non_idl_tuples": [
+    "/home/surya/ros2_ws/src/action_interface:action/Trial.action",
+    "/home/surya/ros2_ws/src/action_interface:action/Shape.action",
+    "/home/surya/ros2_ws/src/action_interface:action/Number.action"
+  ]
+}
