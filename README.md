@@ -289,10 +289,65 @@ We have Two phases while discovery
 - The server keeps a list of all nodes and tells nodes about others only when needed. Nodes only talk to the server for discovery, not to every node.
 
 
-
-
         
+# WEEK -3
 
+## Brief Explanation
+
+![image](https://github.com/user-attachments/assets/4f34c3ba-c7d9-44fd-b037-c20fc3e44cc9)
+
+
+## Differential drive controller:
+
+ - I have created diff-drive-controller only for the rear wheels.
+
+ - The `/differential_drive_controller` node subscribes to `/cmd_vel` where it hears the Twist message published.
+
+ - Hearing from the Twist message the bot moves accordingly
+
+ - The `/differential_drive_controller` publishes msg into `odom` topic of type `nav_msgs/msg/Odometry` using which we can see the tf of the base_link w.r.t to gazebo origin
+
+
+
+ ## Camera Plugin:
+
+ - The node `/camera_plugin` publishes to two topics `my_camera/camera_info` and `/my_camera/image_raw`
+
+
+ - `/my_camera/image_raw` is topic where the `sensor_msgs/Image` is published.If subscribed to this topic we could use the camera's output
+
+ - `my_camera/camera_info` topic has messages regarding the callibration of camera 
+
+ ## Lidar Plugin
+
+ - This plugin simulates a virtual Lidar
+
+ - The node `/lidar_controller` publishes the output of the virtual sensor to the topic `/scan` of type `sensor_msgs/LaserScan`
+
+---
+## Stopper_node:
+
+ - Our `/stopper_node`  stops the bot if the horizontal distance becomes less than or equal to 0.5 m 
+ 
+ - `/stopper_node` subscribes to  `/scan` topic goes through the message.Even if a single ray's distance is >=0.5 publishes a msg to `/cmd_vel`.(a Twist msg contain linear and angular velocities as '0')
+
+
+ ## How to a run the node??
+
+- I have created a launch file for spawning a robot in gazebo
+
+```
+ ros2 launch my_robot_description gazebo_sim.launch.py
+```
+
+
+- To use a stopper_node in another terminal 
+
+```
+ ros2 run lidar_based_contoller lidar_stopper 
+```
+
+-
 
         
 
