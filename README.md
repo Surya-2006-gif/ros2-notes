@@ -347,11 +347,11 @@ We have Two phases while discovery
  ros2 run lidar_based_contoller lidar_stopper 
 ```
 
--
 
+# Video Link Of Robot Simulation:
+
+- https://drive.google.com/drive/folders/18fmEQMbYiqsGDM2ieHdm06u7pteD4Q0Y?usp=sharing
         
-
-
 
 
 
