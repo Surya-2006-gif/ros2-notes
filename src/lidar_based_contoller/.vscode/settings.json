@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/surya/install/tweak/lib/python3.10/site-packages",
+        "/home/surya/install/turtlesim/lib/python3.10/site-packages",
+        "/home/surya/install/simple_server/lib/python3.10/site-packages",
+        "/home/surya/install/opencv/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/surya/install/tweak/lib/python3.10/site-packages",
+        "/home/surya/install/turtlesim/lib/python3.10/site-packages",
+        "/home/surya/install/simple_server/lib/python3.10/site-packages",
+        "/home/surya/install/opencv/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
