@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'lidar_stopper = lidar_based_contoller.distance_measurer:main'
+            'lidar_stopper = lidar_based_contoller.distance_measurer:main',
+            'maze_solver = lidar_based_contoller.maze_solver:main'
         ],
     },
 )

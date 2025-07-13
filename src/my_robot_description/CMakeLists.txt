@@ -12,7 +12,7 @@ find_package(ament_cmake REQUIRED)
 
 # Install robot description files
 install(
-  DIRECTORY urdf meshes launch
+  DIRECTORY urdf meshes launch worlds
   DESTINATION share/${PROJECT_NAME}
 )
 

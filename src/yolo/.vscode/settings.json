@@ -1,0 +1,24 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/surya/ros2_ws/src/install/yolov8_msgs/local/lib/python3.10/dist-packages",
+        "/home/surya/ros2_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages",
+        "/home/surya/ros2_ws/build/turtlesim_controller",
+        "/home/surya/ros2_ws/install/turtlesim_controller/lib/python3.10/site-packages",
+        "/home/surya/ros2_ws/install/opencv_ros/lib/python3.10/site-packages",
+        "/home/surya/ros2_ws/install/opencv/lib/python3.10/site-packages",
+        "/home/surya/ros2_ws/install/lidar_based_contoller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/surya/ros2_ws/src/install/yolov8_msgs/local/lib/python3.10/dist-packages",
+        "/home/surya/ros2_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages",
+        "/home/surya/ros2_ws/build/turtlesim_controller",
+        "/home/surya/ros2_ws/install/turtlesim_controller/lib/python3.10/site-packages",
+        "/home/surya/ros2_ws/install/opencv_ros/lib/python3.10/site-packages",
+        "/home/surya/ros2_ws/install/opencv/lib/python3.10/site-packages",
+        "/home/surya/ros2_ws/install/lidar_based_contoller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

@@ -6,6 +6,7 @@
     </material>
   </xacro:macro>
 
+  <link name="world_link"/>
   <link name="base_link">
     <visual>
       <geometry>
@@ -229,7 +230,13 @@
 </gazebo>
 
 <!-- - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - -  - - - - -->
-  
+
+
+<joint name="world_to_base" type="fixed">
+  <parent link="world_link"/>
+  <child link="base_link"/>
+</joint>
+
 <xacro:macro name="base_connection_joint" params="prefix x y z r p yaw">
    <joint name="base_${prefix}_connection_joint" type="fixed">
   <parent link="base_link"/>
@@ -245,11 +252,10 @@
 
 
 <xacro:macro name="connection_rocker_joint" params="prefix x y z r p yaw">
-   <joint name="${prefix}_connection_${prefix}_rocker_joint" type="revolute">
+   <joint name="${prefix}_connection_${prefix}_rocker_joint" type="fixed">
   <parent link="${prefix}_connection_link"/>
   <child link="${prefix}_rocker_link"/>
   <axis xyz="0 1 0"/>
-  <limit lower="-0.2" upper="0.2" effort="10" velocity="1.0"/>
   <origin xyz="${x} ${y} ${z}" rpy="${r} ${p} ${yaw}"/>
 </joint>
 </xacro:macro>
@@ -381,4 +387,5 @@
 <xacro:include filename='lidar_plugin.urdf.xacro'/>
 <xacro:include filename='camer_plugin.urdf.xacro'/>
 <xacro:include filename='gazebo_control_plugin.urdf.xacro'/>
+<xacro:include filename = 'depth_camera_plugin.urdf.xacro'/>
 </robot>

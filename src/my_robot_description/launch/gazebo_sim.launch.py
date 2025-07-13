@@ -17,6 +17,8 @@ def generate_launch_description():
 
     urdf_file = xacro.process_file(urdf_file_path).toxml()
 
+    print(pkg_path)
+
     # Robot State Publisher
     robot_state_publisher = Node(
         package='robot_state_publisher',

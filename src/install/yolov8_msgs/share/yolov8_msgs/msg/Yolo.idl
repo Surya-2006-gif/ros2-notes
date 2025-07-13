@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from yolov8_msgs/msg/Yolo.msg
+// generated code does not contain a copyright notice
+
+
+module yolov8_msgs {
+  module msg {
+    struct Yolo {
+      string class_name;
+
+      int32 class_id;
+
+      float confidence;
+
+      float x1;
+
+      float y1;
+
+      float x2;
+
+      float y2;
+    };
+  };
+};
