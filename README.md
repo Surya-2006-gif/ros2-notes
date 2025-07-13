@@ -353,10 +353,42 @@ We have Two phases while discovery
 - https://drive.google.com/drive/folders/18fmEQMbYiqsGDM2ieHdm06u7pteD4Q0Y?usp=sharing
         
 
+# WEEK - 4
+
+- Using opencv I've tried to detect a box,cylinder and a sphere(one at a time).
+
+- I have tried to detect box such that rotation of it doesnt harm the prediction
+
+- Using yolo I've trained it to detect construction cone
+
+### Method 1(ploygon approx + lidar):
+
+    - I guess among all the methods I've tried in opencv this was one  of the best method
+
+    - The issues with the polygon approx was the hard coded logic for shape detection w.r.t to len(approx) didnt work perfectly.The  len(approx) within if conditionals  also had to be changed when epsilon was changed
+
+    - I've used lidar here to detect whether the box is rotated or not
 
 
-   
+- Another method I've tried to detect rotated box was depth camera
 
+- I've wanted lidar/depth_camera and camera message to be recieved at same time,So I used `ApproximateTimeSynchronizer` and `Subscriber` from `message_filters`
+
+### Method 3(corner detection + lidar):
+
+    - This method didnt come up well for me.I've tried two methods Harris-corner detector and Shi-Tomasi corner detector.
+
+    - Harris corner detector was detecting more than 8 corners even for a box.So ,to put a constraint on number of corners I moved to Shi-Tomasi corber detector.Since I've tried to detect number of corners for diffrent objects I needed a upper limit for corbners as 8.Due to which even for a box i got 8 of those corners
+
+### Method(Hough lines + Hough circles + lidar):
+    - This is also one of the best method.
+
+    - To detect the curve in the topmost region of the  cylinder I tried multiple methods.One of them was hough circles,the issue with this was it couldnt fit consistently it was on and off.So I moved onto ellipsefitting.Eventhough it was perfect and consistent, all shapes could fit an ellipse.After that i finally extracted the ROI of that top region and used curve fitting  
+
+#### Method 4(Yolo):
+    - I used YOLOv8 from ultralytics library
+
+    - The pre-trained model wasnt able to detect any shapes nor the construction cone.So I took a construction cone dataset from github and used it to train the model to detect construction cone. 
 
 
 
