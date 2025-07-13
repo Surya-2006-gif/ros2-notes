@@ -1,7 +1,0 @@
-{
-  "package_name": "yolov8_msgs",
-  "non_idl_tuples": [
-    "/home/surya/ros2_ws/src/yolov8_msgs:msg/Yolo.msg",
-    "/home/surya/ros2_ws/src/yolov8_msgs:msg/Detections.msg"
-  ]
-}
