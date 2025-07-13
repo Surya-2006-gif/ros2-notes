@@ -1,5 +1,0 @@
-int32 shape
----
-bool success
----
-geometry_msgs/Point current_pos

@@ -1,9 +1,0 @@
-# goal
-int32 target
----
-#response
-bool success
----
-#feedback
-
-int32 current
